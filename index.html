@@ -1,11 +1,401 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My Website</title>
+
+    <!-- font awesome 5 link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+
+    <div class="container">
+        <header>
+          <nav class="navbar navbar-expand-md">          
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span> <i class="fas fa-bars navbar-icon"></i> </span>
+            </button>
+
+            <a class="navbar-brand" href="#">
+                <img src="http://www.studywithanis.com/wp-content/uploads/2017/01/logo.png" alt="logo">
+            </a>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link text-center text-md-left" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-center text-md-left" href="#about-me">About Me</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-center text-md-left" href="#tutorial">Tutorials</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-center text-md-left" href="#feedback">Feedback</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-center text-md-left" href="#contact">Contact</a>
+                </li>               
+              </ul>
+            </div>
+          </nav>
+
+          <section id="banner">
+              <div class="banner-container d-flex justify-content-center align-items-center">
+                  <div class="banner-contents text-center">
+                      <h1 class="font-weight-bolder text-white mb-5">Learn Something New !!!</h1>
+                      <button class="btn btn-lg btn-primary mr-3" onclick="location.href='#tutorial'" > <i class="fas fa-play mr-2"></i> Tutorials</button>
+                      <button class="btn btn-lg btn-primary mr-3" onclick="window.open('https://www.youtube.com/channel/UCEXwc6mNh7Lakj6lX-7a2Mg')" class="request-callback"><i class="fab fa-youtube mr-2"></i>  Subscribe</button>
+
+                  </div>
+              </div>
+          </section>
+        </header>
+
+        <main>
+          <!-- features starts  -->
+            <section id="features" class="text-center">
+                <div class="row">
+                    <div class="col-lg-4 d-block d-lg-flex">
+                      <div class="features-col ">
+                          <i class="fas fa-hand-holding-usd fa-3x icon-style rounded-circle"></i>
+                          <h5 class="font-weight-bold">Free to use</h5>
+                          <p class="small">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione veritatis deserunt commodi, blanditiis deleniti atque.</p>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 d-block d-lg-flex">
+                      <div class="features-col ">
+                          <i class="fas fa-hand-holding-usd fa-3x icon-style rounded-circle"></i>
+                          <h5 class="font-weight-bold">Free to use</h5>
+                          <p class="small">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione veritatis deserunt commodi, blanditiis deleniti atque.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 d-block d-lg-flex">
+                      <div class="features-col ">
+                          <i class="fas fa-hand-holding-usd fa-3x icon-style rounded-circle"></i>
+                          <h5 class="font-weight-bold">Free to use</h5>
+                          <p class="small">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione veritatis.</p>
+                        /div>
+                    </div>
+                </div>
+            </section>
+             <!-- features ends  -->
+
+             <!-- about-me starts  -->
+             <section id="about-me">
+                <div class="section-title">
+                    <h3 class="text-center">About Me</h3>
+                    <hr class="hr-style" style="border-color:black">
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div class="basic-desc text-center text-lg-left">
+                            <i class="icon-style rounded-circle far fa-user fa-2x"></i>
+                            <h5 class="font-weight-bolder">Personal Info</h5>
+                            <p>Name: Anisul Islam</p> 
+                            <p>Profession : Computer Science teacher</p>
+                            <p>Current address : Tampere, Finland</p>
+                            <p>Website: <a href="http://www.studywithanis.com" target="blank">www.studywithanis.com</a> </p> 
+                            <p><a href="https://www.dropbox.com/s/hcrb4xwuvwpicf7/PERSONAL%20INFORMATIONAnisul%20Islam.pdf?dl=0" target="blank" download="">
+                                <button class="btn btn-primary">Download CV</button>
+                            </a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-lg-7"></div>
+                  <div class="col-lg-5">
+                      <div class="achieve-desc text-center text-lg-left">
+                        <i class="icon-style rounded-circle fas fa-trophy fa-2x"></i>    
+                        <h5 class="font-weight-bolder">Achievements</h5>
+                        <p><span>100% Tuition Waiver: </span> Based on excellent academic result in Tampere university, Finland</p> <br>
+                        <p><span>Public Bank Scholarship: </span>  40,000 TK, For scoring GPA 3.92/4.00 in B.Sc.</p> <br>
+                        <p><span>Silver Button: </span>  from YouTube because of 100,000 Subscribers. Current Subscribers are more than 208,000.</p>
+                    </div>
+                  </div>
+                </div>
+
+
+
+                <div class="row">
+                  <div class="col-lg-5">
+                    <div class="skill-desc text-center text-lg-left">
+                        <i class="icon-style rounded-circle fas fa-briefcase fa-2x"></i>
+                        <h5 class="font-weight-bolder" >Skills</h5>
+
+                        <table>
+                            <tr>
+                              <td>HTML</td>
+                              <td>
+                                <span class="star">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>CSS</td>
+                              <td>
+                                <span class="star">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>JS</td>
+                              <td>
+                                <span class="star">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half"></i>
+                                    <i class="far fa-star"></i>
+                                </span>
+                              </td>
+                            </tr>
+                        </table>
+                    </div>
+                  </div>
+              </div>
+
+              <div class="row">
+                <div class="col-lg-7"></div>
+                <div class="col-lg-5">
+                    <div class="achieve-desc text-center text-lg-left">
+                      <i class="icon-style rounded-circle fas fa-trophy fa-2x"></i>    
+                      <h5 class="font-weight-bolder">Achievements</h5>
+                      <p><span>100% Tuition Waiver: </span> Based on excellent academic result in Tampere university, Finland</p> <br>
+                      <p><span>Public Bank Scholarship: </span>  40,000 TK, For scoring GPA 3.92/4.00 in B.Sc.</p> <br>
+                      <p><span>Silver Button: </span>  from YouTube because of 100,000 Subscribers. Current Subscribers are more than 208,000.</p>
+                  </div>
+                </div>
+              </div>
+
+             </section>
+             <!-- about-me ends  -->
+
+             <!-- tutorial starts here  -->
+             <section id="tutorial">
+                <div class="section-title">
+                  <h3 class="text-center">Tutorial</h3>
+                  <hr class="hr-style" style="border-color:black">
+              </div>
+
+              <div class="row text-center mb-3">
+                  <div class="col-lg-3 col-md-6 col-sm-12">
+                      <div class="card mb-5 m-lg-0">
+                          <img class="card-img-top" src="http://www.studywithanis.com/wp-content/uploads/2018/01/ICT-Cover.jpg" alt="">
+                          <div class="card-body text-center">
+                            <h3 class="card-title font-weight-bolder">HSC ICT</h3>
+                            <a href="#" class="stretched-link"></a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-12">
+                      <div class="card mb-5 m-lg-0">
+                          <img class="card-img-top" src="http://www.studywithanis.com/wp-content/uploads/2018/01/ICT-Cover.jpg" alt="">
+                          <div class="card-body text-center">
+                            <h3 class="card-title font-weight-bolder">HSC ICT</h3>
+                            <a href="#" class="stretched-link"></a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-12">
+                      <div class="card mb-5 m-lg-0">
+                          <img class="card-img-top" src="http://www.studywithanis.com/wp-content/uploads/2018/01/ICT-Cover.jpg" alt="">
+                          <div class="card-body text-center">
+                            <h3 class="card-title font-weight-bolder">HSC ICT</h3>
+                            <a href="#" class="stretched-link"></a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-12">
+                      <div class="card mb-5 m-lg-0">
+                          <img class="card-img-top" src="http://www.studywithanis.com/wp-content/uploads/2018/01/ICT-Cover.jpg" alt="">
+                          <div class="card-body text-center">
+                            <h3 class="card-title font-weight-bolder">HSC ICT</h3>
+                            <a href="#" class="stretched-link"></a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+
+              <div class="row text-center mb-3">
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="card mb-5 m-lg-0">
+                        <img class="card-img-top" src="http://www.studywithanis.com/wp-content/uploads/2018/01/ICT-Cover.jpg" alt="">
+                        <div class="card-body text-center">
+                          <h3 class="card-title font-weight-bolder">HSC ICT</h3>
+                          <a href="#" class="stretched-link"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="card mb-5 m-lg-0">
+                        <img class="card-img-top" src="http://www.studywithanis.com/wp-content/uploads/2018/01/ICT-Cover.jpg" alt="">
+                        <div class="card-body text-center">
+                          <h3 class="card-title font-weight-bolder">HSC ICT</h3>
+                          <a href="#" class="stretched-link"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="card mb-5 m-lg-0">
+                        <img class="card-img-top" src="http://www.studywithanis.com/wp-content/uploads/2018/01/ICT-Cover.jpg" alt="">
+                        <div class="card-body text-center">
+                          <h3 class="card-title font-weight-bolder">HSC ICT</h3>
+                          <a href="#" class="stretched-link"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="card mb-5 m-lg-0">
+                        <img class="card-img-top" src="http://www.studywithanis.com/wp-content/uploads/2018/01/ICT-Cover.jpg" alt="">
+                        <div class="card-body text-center">
+                          <h3 class="card-title font-weight-bolder">HSC ICT</h3>
+                          <a href="#" class="stretched-link"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             </section>
+             <!-- tutorial ends here  -->
+
+             <!-- feedback starts  -->
+             <section id="feedback">
+                <div class="section-title">
+                  <h3 class="text-center text-light">Feedback</h3>
+                  <hr class="hr-style">
+              </div>
+
+                <div class="row">
+                  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                          <p>1. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi assumenda odit error. Sint, id harum sequi voluptate officia eligendi ea?</p>
+                          <img class="rounded-circle feedback-img" src="data:image/jpeg;base64,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" alt="feedback img">
+                          <h6>Anisul Islam</h6>
+                      </div>
+                      <div class="carousel-item">
+                          <p>2. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi assumenda odit error. Sint, id harum sequi voluptate officia eligendi ea?</p>
+                          <img class="rounded-circle feedback-img" src="data:image/jpeg;base64,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" alt="feedback img">
+                          <h6>Anisul Islam</h6>
+                      </div>
+                      <div class="carousel-item">
+                          <p>3. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi assumenda odit error. Sint, id harum sequi voluptate officia eligendi ea?</p>
+                          <img class="rounded-circle feedback-img" src="data:image/jpeg;base64,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" alt="feedback img">
+                          <h6>Anisul Islam</h6>
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+                </div>
+             </section>
+             <!-- feedback ends -->
+
+             <!-- contact me starts here -->
+             <section id="contact">
+                  <div class="section-title">
+                    <h3 class="text-center text-white">Contact Me</h3>
+                    <hr class="hr-style">
+                </div>
+
+                <div class="row">
+                  <div class="col-lg-12">
+                    <form action="mailto:anisul2010s@yahoo.co.uk" method="post" enctype="text/plain" class="was-validated">
+
+                        <div class="form-group mb-1">
+                            <label for="fullname">Fullname</label>
+                            <input type="text" class="form-control" name="fullname" required>
+                            <div class="valid-feedback">valid</div>
+                            <div class="invalid-feedback" style="color: white;">Enter fullname before submitting the form</div>
+                        </div>
+
+                        <div class="form-group mb-1">
+                          <label for="email">Email</label>
+                          <input type="email" class="form-control" name="email" required>
+                      </div>
+
+                        <div class="form-group mb-1">
+                          <label for="message">Message</label>
+                          <textarea style="resize: none;" name="" id="" class="form-control" cols="30" rows="4"></textarea>
+                      </div>
+
+                        <div class="form-group text-center mb-1">
+                          <input type="submit" class="btn btn-primary mr-3" value="submit">
+                          <input type="reset" class="btn btn-primary" value="reset">
+                      </div>
+
+                    </form>
+                  </div>
+                </div>
+             </section>
+             <!-- contact me ends here -->
+
+        </main>
+        <footer>
+            <div class="row text-white">
+                <div class="col-lg-6 text-center text-lg-left mb-3 mb-lg-0">
+                    <p class="small mb-0 mt-1 ">&copy; Copyright Anisul Islam</p>
+                </div>
+                <div class="col-lg-6 text-center text-lg-right">
+                    <a href="#">Home</a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+   
+
+
+    <!-- bootstrap js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+        integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous">
+    </script>
 </body>
+
 </html>
